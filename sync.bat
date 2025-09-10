@@ -2,7 +2,7 @@
 
 set /p MESSAGE="Commit Message: "
 
-for /r "%cd%\cpps" %%f in (*.exe) do del "%%f"
+for /r "%cd%" %%f in (*.exe) do del "%%f"
 
 git add .
 git commit -m "%MESSAGE%"
